@@ -31,10 +31,13 @@ public class Main extends Application {
 
     private static void rep() {
         Scanner tryAgain = new Scanner(System.in);
-        System.out.println("If You want to repeat - type Y/y \nIf not you can type any symbol");
-        if ((tryAgain.next().equals("y")) || (tryAgain.next().equals("Y"))) {
+        System.out.println("If You want to repeat - type y \nIf not you can type any symbol");
+        if (tryAgain.next().equals("y"))  {
             mthd();
-        } else System.exit(0);
+        } else {
+            System.out.println("Thx for using our product. Bye!");
+                    System.exit(0);
+        }
     }
 
     private static void mthd() {
